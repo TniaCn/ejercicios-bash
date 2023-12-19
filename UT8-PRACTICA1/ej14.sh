@@ -6,7 +6,7 @@ cont=0
 for i in `ls -a $1`; do
 	((cont++))
 
-	if [[ -d $i ]]
+	if [[ -d $1$i ]]
 	then
 		echo "$i es un directorio."
 	else
