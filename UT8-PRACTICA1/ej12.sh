@@ -6,6 +6,17 @@ function limpiar(){
 	clear
 }
 
+function error(){
+	if [[ $orden -lt 0 || $orden -gt 4 ]]
+	then
+		echo ""
+		echo "*********************************"
+		echo "Error. Opción no válida"
+		echo "*********************************"
+		echo ""
+	fi
+}
+
 function menu(){
 echo "1-Sumar"
 echo "2-Restar"
@@ -45,19 +56,13 @@ function div(){
 	echo "$num1*$num2=$res"
 }
 
+
 #Menú
 
 menu
 while [[ $orden -ne 0 ]]
 do
-	if [[ $orden -lt 0 || $orden -gt 4 ]]
-	then
-		echo ""
-		echo "*********************************"
-		echo "Error. Opción no válida"
-		echo "*********************************"
-		echo ""
-	fi
+	error
 case $orden in
 1)
 	suma
