@@ -7,14 +7,11 @@ function limpiar(){
 }
 
 function error(){
-	if [[ $orden -lt 0 || $orden -gt 4 ]]
-	then
-		echo ""
-		echo "*********************************"
-		echo "Error. Opción no válida"
-		echo "*********************************"
-		echo ""
-	fi
+	echo ""
+	echo "*********************************"
+	echo "Error. Opción no válida"
+	echo "*********************************"
+	echo ""
 }
 
 function menu(){
@@ -62,7 +59,6 @@ function div(){
 menu
 while [[ $orden -ne 0 ]]
 do
-	error
 case $orden in
 1)
 	suma
@@ -76,6 +72,8 @@ case $orden in
 4)
 	div
 	limpiar;;
+*)
+	error;;
 esac
 menu
 done
