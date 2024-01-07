@@ -21,4 +21,9 @@
 # For more information see the manual pages of crontab(5) and cron(8)
 # 
 # m h  dom mon dow   command
-@reboot /home/admin01/ejercicios-bash/UT8-PRACTICA4
+
+#ej4.sh
+@reboot /home/admin01/ejercicios-bash/UT8-PRACTICA4/ej4.sh
+
+#ej5.sh
+*/5 * * * * /home/admin01/ejercicios-bash/UT8-PRACTICA4/ej5.sh
