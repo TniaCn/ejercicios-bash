@@ -10,10 +10,10 @@ while IFS=, read -r estado nom ap1 ap2 grup; do
         id="alu$apellido1$apellido2$nombre"
 
         if [[ -z "$grup" ]] || ! grep -q "^$grup" /etc/group; then
-            groupadd $id
-            useradd $id -g $id
+            sudo groupadd $id
+            sudo useradd $id -g $id
         else
-            useradd $id -g $grup
+            sudo useradd $id -g $grup
         fi
 
     elif [[ $estado == "baja" ]]; then
@@ -21,6 +21,6 @@ while IFS=, read -r estado nom ap1 ap2 grup; do
         apellido2=$(echo $ap2 | cut -c1-2)
         nombre=$(echo $nom | cut -c1)
         id="alu$apellido1$apellido2$nombre"
-        deluser $id
+        sudo deluser $id
     fi
 done < "$archivo"
