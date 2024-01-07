@@ -1,0 +1,3 @@
+alta,tania,cantero,peris
+alta,pepe,pepe,pepe
+baja,tania,cantero,peris
