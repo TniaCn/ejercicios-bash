@@ -27,3 +27,15 @@
 
 #ej5.sh
 */5 * * * * /home/admin01/ejercicios-bash/UT8-PRACTICA4/ej5.sh
+
+#ej6.sh
+*/10 * * * * /home/admin01/ejercicios-bash/UT8-PRACTICA4/ej6.sh
+
+#ej7.sh
+0 2 * * 0 /home/admin01/ejercicios-bash/UT8-PRACTICA4/ej7.sh
+
+#ej8.sh
+*/2 * * * * /home/admin01/ejercicios-bash/UT8-PRACTICA4/ej8.sh
+
+#ej10.sh
+0 1 * * * /home/admin01/ejercicios-bash/UT8-PRACTICA4/ej10.sh
